@@ -37,7 +37,8 @@ int main() {
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 2) {
+        }
+        if (useractions1 == 2) {
             cout << "You have 22569 trophys. The next award is 22600 trophys.\n";
             cout << "\n1)Leave?";
             cin >> useractions2;
@@ -56,63 +57,75 @@ int main() {
             if (useractions3 == 2) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 4) {
+        }
+        if (useractions1 == 4) {
             cout << "A bunch of useless stocks, you don't want to take anything.\n";
             cout << "\n1)Leave\n";
             cin >> useractions2;
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 5) {
+        }
+        if (useractions1 == 5) {
             cout << "You have:\nShelly\nColt\nBull\nBrock\nBarley\nNita\nEl Primo\nPoco\nTick\nStu\nMortis\nTara\nLeon\nNow you have Mortis selected.\n";
             cout << "\n1)Leave\n";
             cin >> useractions2;
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 6) {
+        }
+        if (useractions1 == 6) {
             cout << "A bunch of boring news that you don't want to read.\n";
             cout << "\n1)Leave\n";
             cin >> useractions2;
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 7) {
+        }
+        if (useractions1 == 7) {
             cout << "You have level 34 in Brawl Pass.\nNext award is gems.";
             cout << "\n1)Leave\n";
             cin >> useractions2;
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 8) {
+        }
+        if (useractions1 == 8) {
             cout << "You have no friends. :D\n";
             cout << "\n1)Leave\n";
             cin >> useractions2;
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 9) {
+        }
+        if (useractions1 == 9) {
             cout << "There are 99 members in the club. You don't want to write anything in the chat.\n";
             cout << "\n1)Leave\n";
             cin >> useractions2;
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 10) {
+        }
+        if (useractions1 == 10) {
             cout << "To do this you need to be on a team.\n";
             cout << "\n1)Leave\n";
             cin >> useractions2;
             if (useractions2 == 1) {
                 BackToMenu(useractions1);
             }
-        } else if (useractions1 == 11) {
+        }
+        if (useractions1 == 11) {
             cout << "Select a mode:\n1)Gem Grab.\n2)Showdown.\n3)Brawl Ball.\n4)Hot Zone.\nThere are no special or temporary events.\n";
             cin >> useractions4;
             if (useractions4 == 2) {
-                cout << "Solo or duo?\n";
+                cout << "1)Solo\n2)duo\n";
                 cin >> useractions5;
+                BackToMenu(useractions1);
+            } else if (useractions4 != 2) {
+                BackToMenu(useractions1);
             }
-        } else if (useractions1 == 12) {
+        }
+        if (useractions1 == 12) {
             if (useractions4 == 1){
                 cout << "Your team: Bo, Mortis(you), Shelly.\nEnemies team: Tick, Tara, Brock.\nWhat are you going to do now?\n1)Go to the center\n2)Go left\n3)Go right\n";
                 cin >> useractions6;
@@ -140,7 +153,7 @@ int main() {
             } else if (useractions4 == 2) {
                 if (useractions5 == 1) {
                     cout << "Your enemies:\nTara\nMortis\nCrow\nColt\nBull\nTick\nEl Primo\nNita\n8-Bit\n";
-                    cout << "There are big bushes in the center, will you go there?\n1) Yes.\n2) No.\n";
+                    cout << "There are big bushes in the center, will you go there?\n1) Go with him.\n2) Go away.\n";
                     cin >> useractions8;
                     if (useractions8 == 1) {
                         cout << "Bull was in the center, you had no chance and you lost.\n";
@@ -200,7 +213,8 @@ int main() {
                     BackToMenu(useractions1);
                 }
             }
-        } else if (useractions1 == 13) {
+        }
+        if (useractions1 == 13) {
             cout << "\n---===Goodbye!. The game is over.===---";
         }
         game = 0;
