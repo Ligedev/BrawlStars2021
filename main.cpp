@@ -216,8 +216,8 @@ int main() {
         }
         if (useractions1 == 13) {
             cout << "\n---===Goodbye!. The game is over.===---";
+            game = 0;
         }
-        game = 0;
     }
     return 0;
 }
