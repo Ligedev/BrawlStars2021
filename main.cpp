@@ -39,7 +39,7 @@ int main() {
             }
         }
         if (useractions1 == 2) {
-            cout << "You have 22569 trophys. The next award is 22600 trophys.\n";
+            cout << "You have " << trophies << "trophys.\n";
             cout << "\n1)Leave?";
             cin >> useractions2;
             if (useractions2 == 1) {
