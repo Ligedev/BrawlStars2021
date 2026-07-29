@@ -11,12 +11,12 @@ int main() {
     int game = 1; //1 = game going, 0 = game ended
     int trophies = 22569;
     int useractions[11];
-    //A loop that can restart the game.
-    while (game == 1) {
-        cout << "Welcome in Brawl Stars 2021\nLoading";
+    cout << "Welcome in Brawl Stars 2021\nLoading";
         for (int i = 0; i < 6; i++) {
             cout << "."; //Simulates loading
         }
+    //A loop that can restart the game.
+    while (game == 1) {
         cout << "\n---===Menu===---\n";
         cout << "1)Profile\n2)Trophy road\n3)Settings\n4)Shop\n5)Brawlers\n6)News\n7)Brawl Pass\n8)Friend\n9)Club\n10)Chat\n11)Selecting a mode\n12)Play\n13)Exit the game.\n";
         cin >> useractions[0];
